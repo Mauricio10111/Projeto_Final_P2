@@ -1,0 +1,26 @@
+﻿<Page x:Class="Projeto_Final_P2.Views.Home_Page"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Projeto_Final_P2.Views" Background="Azure"
+      mc:Ignorable="d" Title="Home_Page" Height="600" Width="1080">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="21*"/>
+            <RowDefinition Height="179*"/>
+
+
+        </Grid.RowDefinitions>
+
+        
+        
+
+        <Label Grid.Column="0" Content="Aplicação Final da Cadeira de Programação 2" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center" Margin="271,0,293,485" Height="42" Width="516" Grid.Row="1" />
+        <TextBlock TextAlignment="Center" Text="Registo de Clientes" FontWeight="Bold" FontSize="20" Grid.Row="1" VerticalAlignment="Bottom" Margin="-22,0,22,458" Height="27"/>
+        <Image Source="/Projeto_Final_P2;component/Imagens/Home_Page_image.png" Margin="323,84,340,181" Grid.Row="1" />
+        <Label Content="Licenciatura de Informática | André Maurício | Nº35107 | 2021" HorizontalAlignment="Center" TextBlock.FontSize="14" VerticalAlignment="Center" Grid.Row="1" Margin="333,401,359,106" Width="388" Height="30"/>
+
+    </Grid>
+</Page>

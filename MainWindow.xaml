@@ -1,0 +1,24 @@
+﻿<Window x:Class="Projeto_Final_P2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projeto_Final_P2" Background="Azure"
+        mc:Ignorable="d" Title="Home Page" Height="750" Width="1080" ResizeMode="NoResize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <DockPanel Name="Menu" Grid.Row="0" Background="Beige">
+            <Menu DockPanel.Dock="Top" FontSize="18" Margin="0,3,3,3" Height="29">
+                <MenuItem Header="Aplicações" MinWidth="120">
+                    <MenuItem CommandParameter="App_Page" Header="Registo Clientes" Command="{Binding cmdNavegar, Source={StaticResource ctrl}}"></MenuItem>
+                </MenuItem>
+                <MenuItem CommandParameter="Home_Page" Header="Pagina Principal" Command="{Binding cmdNavegar, Source={StaticResource ctrl}}"></MenuItem>
+            </Menu>
+        </DockPanel>
+        <Frame Grid.Row="1" Name="myFrame" Source="/Projeto_Final_P2;component/Views/Home_Page.xaml"></Frame>
+    </Grid>
+</Window>

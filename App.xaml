@@ -1,0 +1,9 @@
+﻿<Application x:Class="Projeto_Final_P2.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Projeto_Final_P2"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary Source="Resources/Dictionary1.xaml"></ResourceDictionary>
+    </Application.Resources>
+</Application>
